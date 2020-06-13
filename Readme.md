@@ -1,2 +1,2 @@
 ###目的
-do you enjoy codeing?
+do you enjoy coding?
