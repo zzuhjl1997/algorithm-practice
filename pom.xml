@@ -23,7 +23,7 @@
 
     <name>springboot-cocoon</name>
     <modules>
-        <module>ttt</module>
+    <!--    <module>ttt</module>-->
     </modules>
     <groupId>com.study.cx</groupId>
     <artifactId>springboot-cocoon</artifactId>
@@ -44,6 +44,14 @@
                     </connectors>
                     <webAppSourceDirectory>${project.build.directory}/${pom.artifactId}-${pom.version}</webAppSourceDirectory>
                     <contextPath>/</contextPath>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
                 </configuration>
             </plugin>
         </plugins>

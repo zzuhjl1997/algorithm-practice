@@ -16,7 +16,7 @@ public class InsertSortTest {
                 //赋值给待排序元素
                 t = arr[i];
                 for (j = i - 1; j >= 0 && arr[j] > t; j--) {
-                    //从后往前遍历已排序数组，如果已排序元素较大，则将他后裔
+                    //从后往前遍历已排序数组，如果已排序元素较大，则将他后移
                     arr[j + 1] = arr[j];
                 }
                 arr[j + 1] = t;
